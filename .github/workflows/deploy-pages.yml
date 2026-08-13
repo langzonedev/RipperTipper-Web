@@ -1,0 +1,75 @@
+name: Deploy RipperTipper Web
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "index.html"
+      - "app.js"
+      - "styles.css"
+      - "assets/**"
+      - "current_round.json"
+      - ".nojekyll"
+      - ".github/workflows/deploy-pages.yml"
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout public site
+        uses: actions/checkout@v4
+
+      - name: Validate public prediction contract
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          payload = json.loads(Path('current_round.json').read_text(encoding='utf-8'))
+          allowed_root = {'round_name', 'round_dates', 'status', 'updated_at', 'updated_label', 'tips'}
+          allowed_tip = {'id', 'away_team', 'home_team', 'recommended_team', 'confidence_percent', 'start_time', 'venue', 'reason', 'kickoff_epoch_millis'}
+          forbidden = {'sources', 'model_count', 'baseline_model_home_probability', 'context_home_probability', 'weights', 'features'}
+
+          extra_root = set(payload) - allowed_root
+          if extra_root:
+              raise SystemExit(f'Unexpected public root fields: {sorted(extra_root)}')
+          if forbidden & set(payload):
+              raise SystemExit('Forbidden private fields found at root')
+          tips = payload.get('tips')
+          if not isinstance(tips, list) or not tips:
+              raise SystemExit('Prediction snapshot must contain tips')
+          for tip in tips:
+              extra = set(tip) - allowed_tip
+              blocked = forbidden & set(tip)
+              if extra or blocked:
+                  raise SystemExit(f'Unsafe public tip fields: {sorted(extra | blocked)}')
+          print(f'Validated {len(tips)} public tips')
+          PY
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

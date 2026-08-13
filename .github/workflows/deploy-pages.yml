@@ -12,6 +12,7 @@ on:
       - "accuracy.css"
       - "assets/**"
       - "current_round.json"
+      - "nrl_current_round.json"
       - ".nojekyll"
       - "CNAME"
       - ".github/workflows/deploy-pages.yml"
@@ -32,51 +33,36 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Checkout public site
-        uses: actions/checkout@v4
-
-      - name: Validate public prediction contract
+      - uses: actions/checkout@v4
+      - name: Validate AFL + NRL public boundary
         run: |
           python - <<'PY'
-          import json
+          import json, re
           from pathlib import Path
-
-          payload = json.loads(Path('current_round.json').read_text(encoding='utf-8'))
-          allowed_root = {'round_name', 'round_dates', 'status', 'updated_at', 'updated_label', 'accuracy_percent', 'accuracy_label', 'tips'}
-          allowed_tip = {'id', 'away_team', 'home_team', 'recommended_team', 'confidence_percent', 'start_time', 'venue', 'reason', 'kickoff_epoch_millis', 'result_winner', 'result_label'}
-          forbidden = {'sources', 'model_count', 'baseline_model_home_probability', 'context_home_probability', 'weights', 'features', 'metrics', 'calibration'}
-
-          extra_root = set(payload) - allowed_root
-          if extra_root:
-              raise SystemExit(f'Unexpected public root fields: {sorted(extra_root)}')
-          if forbidden & set(payload):
-              raise SystemExit('Forbidden private fields found at root')
-          accuracy = payload.get('accuracy_percent')
-          if accuracy is not None and (not isinstance(accuracy, int) or not 0 <= accuracy <= 100):
-              raise SystemExit('Invalid public accuracy value')
-          if 'accuracy_label' in payload and not isinstance(payload['accuracy_label'], str):
-              raise SystemExit('Invalid public accuracy label')
-          tips = payload.get('tips')
-          if not isinstance(tips, list) or not tips:
-              raise SystemExit('Prediction snapshot must contain tips')
-          for tip in tips:
-              extra = set(tip) - allowed_tip
-              blocked = forbidden & set(tip)
-              if extra or blocked:
-                  raise SystemExit(f'Unsafe public tip fields: {sorted(extra | blocked)}')
-          print(f'Validated {len(tips)} public tips')
+          allowed_root = {'round_name','round_dates','status','updated_at','updated_label','accuracy_percent','accuracy_label','tips'}
+          allowed_tip = {'id','away_team','home_team','recommended_team','confidence_percent','start_time','venue','reason','kickoff_epoch_millis','result_winner','result_label'}
+          forbidden = {'sources','providers','provider_list','model_count','baseline_model_home_probability','context_home_probability','weights','coefficients','features','metrics','calibration','manual_signals','raw_data'}
+          leak = re.compile(r'\b\d+\s+(?:of|/)\s*\d+\s+(?:tracked\s+)?(?:models?|providers?|sources?)\b|\b(?:models?|providers?)\s+favour\b', re.I)
+          for filename in ('current_round.json','nrl_current_round.json'):
+              payload = json.loads(Path(filename).read_text())
+              extra = set(payload) - allowed_root
+              if extra or forbidden & set(payload):
+                  raise SystemExit(f'{filename}: unsafe root fields')
+              tips = payload.get('tips')
+              if not isinstance(tips, list) or not tips:
+                  raise SystemExit(f'{filename}: tips missing')
+              for tip in tips:
+                  unsafe = (set(tip) - allowed_tip) | (forbidden & set(tip))
+                  if unsafe or leak.search(str(tip.get('reason',''))):
+                      raise SystemExit(f'{filename}: unsafe public tip')
+          print('Validated AFL + NRL production public boundary')
           PY
-
-      - name: Configure Pages
-        uses: actions/configure-pages@v5
+      - uses: actions/configure-pages@v5
         with:
           enablement: true
-
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v3
         with:
           path: .
-
-      - name: Deploy to GitHub Pages
+      - name: Deploy production
         id: deployment
         uses: actions/deploy-pages@v4

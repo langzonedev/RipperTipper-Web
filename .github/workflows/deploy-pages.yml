@@ -9,9 +9,11 @@ on:
       - "index.html"
       - "app.js"
       - "styles.css"
+      - "accuracy.css"
       - "assets/**"
       - "current_round.json"
       - ".nojekyll"
+      - "CNAME"
       - ".github/workflows/deploy-pages.yml"
 
 permissions:
@@ -40,15 +42,20 @@ jobs:
           from pathlib import Path
 
           payload = json.loads(Path('current_round.json').read_text(encoding='utf-8'))
-          allowed_root = {'round_name', 'round_dates', 'status', 'updated_at', 'updated_label', 'tips'}
-          allowed_tip = {'id', 'away_team', 'home_team', 'recommended_team', 'confidence_percent', 'start_time', 'venue', 'reason', 'kickoff_epoch_millis'}
-          forbidden = {'sources', 'model_count', 'baseline_model_home_probability', 'context_home_probability', 'weights', 'features'}
+          allowed_root = {'round_name', 'round_dates', 'status', 'updated_at', 'updated_label', 'accuracy_percent', 'accuracy_label', 'tips'}
+          allowed_tip = {'id', 'away_team', 'home_team', 'recommended_team', 'confidence_percent', 'start_time', 'venue', 'reason', 'kickoff_epoch_millis', 'result_winner', 'result_label'}
+          forbidden = {'sources', 'model_count', 'baseline_model_home_probability', 'context_home_probability', 'weights', 'features', 'metrics', 'calibration'}
 
           extra_root = set(payload) - allowed_root
           if extra_root:
               raise SystemExit(f'Unexpected public root fields: {sorted(extra_root)}')
           if forbidden & set(payload):
               raise SystemExit('Forbidden private fields found at root')
+          accuracy = payload.get('accuracy_percent')
+          if accuracy is not None and (not isinstance(accuracy, int) or not 0 <= accuracy <= 100):
+              raise SystemExit('Invalid public accuracy value')
+          if 'accuracy_label' in payload and not isinstance(payload['accuracy_label'], str):
+              raise SystemExit('Invalid public accuracy label')
           tips = payload.get('tips')
           if not isinstance(tips, list) or not tips:
               raise SystemExit('Prediction snapshot must contain tips')

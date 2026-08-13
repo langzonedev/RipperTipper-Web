@@ -1,18 +1,108 @@
 {
   "round_name": "Round 23",
-  "round_dates": "14–16 August 2026 · Adelaide time",
+  "round_dates": "14\u201316 August 2026 \u00b7 Adelaide time",
   "status": "RipperTipper AFL prediction model",
-  "updated_at": "2026-08-13T03:28:48.646798+00:00",
-  "updated_label": "Updated 13 August, 12:58 pm",
+  "updated_at": "2026-08-13T03:40:01.149888+00:00",
+  "updated_label": "Updated 13 August, 01:10 pm",
   "tips": [
-    {"id":38691,"away_team":"Adelaide","home_team":"Fremantle","recommended_team":"Fremantle","confidence_percent":75,"start_time":"Fri 7:40 pm","venue":"Optus Stadium","reason":"28 of 29 tracked models favour Fremantle. Fremantle also rates higher on results-based team strength. Fremantle has the cleaner current availability profile.","kickoff_epoch_millis":1786702200000},
-    {"id":38688,"away_team":"St Kilda","home_team":"Richmond","recommended_team":"St Kilda","confidence_percent":90,"start_time":"Sat 12:05 pm","venue":"MCG","reason":"29 of 29 tracked models favour St Kilda. St Kilda also rates higher on results-based team strength. St Kilda's recent scoring margins are materially stronger.","kickoff_epoch_millis":1786761300000},
-    {"id":38687,"away_team":"Geelong","home_team":"North Melbourne","recommended_team":"Geelong","confidence_percent":89,"start_time":"Sat 3:15 pm","venue":"Marvel Stadium","reason":"29 of 29 tracked models favour Geelong. Geelong also rates higher on results-based team strength. Geelong has the stronger recent five-game record.","kickoff_epoch_millis":1786772700000},
-    {"id":38683,"away_team":"Gold Coast","home_team":"Brisbane Lions","recommended_team":"Brisbane Lions","confidence_percent":80,"start_time":"Sat 3:45 pm","venue":"Gabba","reason":"29 of 29 tracked models favour Brisbane Lions. Brisbane Lions also rates higher on results-based team strength. Brisbane Lions has the stronger recent five-game record.","kickoff_epoch_millis":1786774500000},
-    {"id":38686,"away_team":"Collingwood","home_team":"Hawthorn","recommended_team":"Hawthorn","confidence_percent":65,"start_time":"Sat 7:10 pm","venue":"MCG","reason":"28 of 29 tracked models favour Hawthorn. Hawthorn's recent scoring margins are materially stronger. Hawthorn has the cleaner current availability profile.","kickoff_epoch_millis":1786786800000},
-    {"id":38690,"away_team":"Melbourne","home_team":"Port Adelaide","recommended_team":"Melbourne","confidence_percent":80,"start_time":"Sat 7:40 pm","venue":"Adelaide Oval","reason":"28 of 29 tracked models favour Melbourne. Melbourne also rates higher on results-based team strength. Melbourne has the stronger recent five-game record.","kickoff_epoch_millis":1786788600000},
-    {"id":38685,"away_team":"West Coast","home_team":"Greater Western Sydney","recommended_team":"Greater Western Sydney","confidence_percent":83,"start_time":"Sun 1:10 pm","venue":"ENGIE Stadium","reason":"29 of 29 tracked models favour Greater Western Sydney. Greater Western Sydney also rates higher on results-based team strength. Greater Western Sydney has the stronger recent five-game record.","kickoff_epoch_millis":1786851600000},
-    {"id":38689,"away_team":"Carlton","home_team":"Western Bulldogs","recommended_team":"Carlton","confidence_percent":57,"start_time":"Sun 2:45 pm","venue":"Marvel Stadium","reason":"23 of 29 tracked models favour Carlton.","kickoff_epoch_millis":1786857300000},
-    {"id":38684,"away_team":"Sydney","home_team":"Essendon","recommended_team":"Sydney","confidence_percent":95,"start_time":"Sun 4:10 pm","venue":"MCG","reason":"29 of 29 tracked models favour Sydney. Sydney also rates higher on results-based team strength. Sydney has the stronger recent five-game record.","kickoff_epoch_millis":1786862400000}
+    {
+      "id": 38691,
+      "away_team": "Adelaide",
+      "home_team": "Fremantle",
+      "recommended_team": "Fremantle",
+      "confidence_percent": 75,
+      "start_time": "Fri 7:40 pm",
+      "venue": "Optus Stadium",
+      "reason": "28 of 29 tracked models favour Fremantle. Fremantle also rates higher on results-based team strength. Fremantle has the cleaner current availability profile.",
+      "kickoff_epoch_millis": 1786702200000
+    },
+    {
+      "id": 38688,
+      "away_team": "St Kilda",
+      "home_team": "Richmond",
+      "recommended_team": "St Kilda",
+      "confidence_percent": 90,
+      "start_time": "Sat 12:05 pm",
+      "venue": "MCG",
+      "reason": "29 of 29 tracked models favour St Kilda. St Kilda also rates higher on results-based team strength. St Kilda's recent scoring margins are materially stronger.",
+      "kickoff_epoch_millis": 1786761300000
+    },
+    {
+      "id": 38687,
+      "away_team": "Geelong",
+      "home_team": "North Melbourne",
+      "recommended_team": "Geelong",
+      "confidence_percent": 89,
+      "start_time": "Sat 3:15 pm",
+      "venue": "Marvel Stadium",
+      "reason": "29 of 29 tracked models favour Geelong. Geelong also rates higher on results-based team strength. Geelong has the stronger recent five-game record.",
+      "kickoff_epoch_millis": 1786772700000
+    },
+    {
+      "id": 38683,
+      "away_team": "Gold Coast",
+      "home_team": "Brisbane Lions",
+      "recommended_team": "Brisbane Lions",
+      "confidence_percent": 80,
+      "start_time": "Sat 3:45 pm",
+      "venue": "Gabba",
+      "reason": "29 of 29 tracked models favour Brisbane Lions. Brisbane Lions also rates higher on results-based team strength. Brisbane Lions has the stronger recent five-game record.",
+      "kickoff_epoch_millis": 1786774500000
+    },
+    {
+      "id": 38686,
+      "away_team": "Collingwood",
+      "home_team": "Hawthorn",
+      "recommended_team": "Hawthorn",
+      "confidence_percent": 65,
+      "start_time": "Sat 7:10 pm",
+      "venue": "MCG",
+      "reason": "28 of 29 tracked models favour Hawthorn. Hawthorn's recent scoring margins are materially stronger. Hawthorn has the cleaner current availability profile.",
+      "kickoff_epoch_millis": 1786786800000
+    },
+    {
+      "id": 38690,
+      "away_team": "Melbourne",
+      "home_team": "Port Adelaide",
+      "recommended_team": "Melbourne",
+      "confidence_percent": 80,
+      "start_time": "Sat 7:40 pm",
+      "venue": "Adelaide Oval",
+      "reason": "28 of 29 tracked models favour Melbourne. Melbourne also rates higher on results-based team strength. Melbourne has the stronger recent five-game record.",
+      "kickoff_epoch_millis": 1786788600000
+    },
+    {
+      "id": 38685,
+      "away_team": "West Coast",
+      "home_team": "Greater Western Sydney",
+      "recommended_team": "Greater Western Sydney",
+      "confidence_percent": 83,
+      "start_time": "Sun 1:10 pm",
+      "venue": "ENGIE Stadium",
+      "reason": "29 of 29 tracked models favour Greater Western Sydney. Greater Western Sydney also rates higher on results-based team strength. Greater Western Sydney has the stronger recent five-game record.",
+      "kickoff_epoch_millis": 1786851600000
+    },
+    {
+      "id": 38689,
+      "away_team": "Carlton",
+      "home_team": "Western Bulldogs",
+      "recommended_team": "Carlton",
+      "confidence_percent": 57,
+      "start_time": "Sun 2:45 pm",
+      "venue": "Marvel Stadium",
+      "reason": "23 of 29 tracked models favour Carlton.",
+      "kickoff_epoch_millis": 1786857300000
+    },
+    {
+      "id": 38684,
+      "away_team": "Sydney",
+      "home_team": "Essendon",
+      "recommended_team": "Sydney",
+      "confidence_percent": 95,
+      "start_time": "Sun 4:10 pm",
+      "venue": "MCG",
+      "reason": "29 of 29 tracked models favour Sydney. Sydney also rates higher on results-based team strength. Sydney has the stronger recent five-game record.",
+      "kickoff_epoch_millis": 1786862400000
+    }
   ]
 }

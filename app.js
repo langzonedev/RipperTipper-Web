@@ -8,6 +8,8 @@
     roundDates: document.querySelector("#round-dates"),
     roundSummary: document.querySelector("#round-summary-heading"),
     dataStatus: document.querySelector("#data-status"),
+    accuracyValue: document.querySelector("#accuracy-value"),
+    accuracyLabel: document.querySelector("#accuracy-label"),
     staleNotice: document.querySelector("#stale-notice"),
     loadingState: document.querySelector("#loading-state"),
     errorState: document.querySelector("#error-state"),
@@ -67,12 +69,18 @@
     elements.dataStatus.textContent = `${freshness} · ${safeText(snapshot.status, "Current round picks")}`;
     elements.staleNotice.hidden = !timestamp || Date.now() - timestamp <= STALE_AFTER_MS;
   }
+  function updateAccuracy(snapshot) {
+    const accuracy = snapshot.accuracy_percent;
+    elements.accuracyValue.textContent = Number.isInteger(accuracy) ? `${accuracy}%` : "Tracking";
+    elements.accuracyLabel.textContent = safeText(snapshot.accuracy_label, "Tracking verified tips from Round 23.");
+  }
   function renderSnapshot(snapshot) {
     currentSnapshot = snapshot;
     elements.roundKicker.textContent = `Next up · ${safeText(snapshot.round_name, "Current round")}`;
     elements.roundDates.textContent = safeText(snapshot.round_dates, "Match dates to be confirmed");
     elements.roundSummary.textContent = `${snapshot.tips.length} pick${snapshot.tips.length === 1 ? "" : "s"} ready`;
     updateFreshness(snapshot);
+    updateAccuracy(snapshot);
     const fragment = document.createDocumentFragment();
     snapshot.tips.forEach((tip, index) => fragment.append(renderMatch(tip, index)));
     elements.matches.replaceChildren(fragment);

@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#15231d">
+  <meta name="description" content="Current AFL tips from Ripper Tipper, refreshed throughout the round.">
+  <meta property="og:title" content="Ripper Tipper — this round's AFL picks">
+  <meta property="og:description" content="Clear AFL picks, confidence and match context for the current round.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/ripper-tipper-logo.svg">
+  <title>Ripper Tipper — AFL picks</title>
+  <link rel="icon" type="image/svg+xml" href="assets/ripper-tipper-logo.svg">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero__inner shell">
+      <a class="brand" href="./" aria-label="Ripper Tipper home">
+        <img class="brand__mark" src="assets/ripper-tipper-logo.svg" alt="" width="54" height="54">
+        <span class="brand__name">Ripper Tipper</span>
+      </a>
+      <div class="hero__copy">
+        <p class="eyebrow" id="round-kicker">Next up</p>
+        <h1>Here’s who<br>to pick.</h1>
+        <p class="hero__date" id="round-dates">Loading the current round…</p>
+      </div>
+      <div class="hero__ball" aria-hidden="true"><span>RT</span></div>
+    </div>
+  </header>
+
+  <main class="shell main-content" id="main-content">
+    <section class="round-bar" aria-labelledby="round-summary-heading">
+      <div>
+        <p class="eyebrow eyebrow--forest" id="round-summary-heading">Getting picks ready</p>
+        <p class="round-bar__status" id="data-status" role="status" aria-live="polite">Checking for the latest update…</p>
+      </div>
+      <button class="refresh-button" id="refresh-button" type="button"><span aria-hidden="true">↻</span> Refresh</button>
+    </section>
+
+    <section class="notice notice--stale" id="stale-notice" hidden aria-labelledby="stale-title">
+      <span class="notice__icon" aria-hidden="true">!</span>
+      <div><strong id="stale-title">These picks may be out of date</strong><p>The latest update is taking longer than usual. Check back before the first bounce.</p></div>
+    </section>
+
+    <section class="state-card" id="loading-state" aria-label="Loading matches">
+      <div class="loader" aria-hidden="true"></div>
+      <div><strong>Loading this round’s picks</strong><p>Checking the latest RipperTipper round.</p></div>
+    </section>
+
+    <section class="state-card state-card--error" id="error-state" hidden aria-labelledby="error-title">
+      <div class="state-card__badge" aria-hidden="true">!</div>
+      <div><strong id="error-title">Picks are unavailable right now</strong><p id="error-message">We couldn’t load the current round. Check your connection and try again.</p><button class="text-button" id="retry-button" type="button">Try again</button></div>
+    </section>
+
+    <section class="matches" id="matches" hidden aria-label="Current round matches"></section>
+
+    <template id="match-template">
+      <article class="match-card">
+        <div class="match-card__meta"><p><span class="match-time"></span><span aria-hidden="true"> · </span><span class="match-venue"></span></p><span class="match-number"></span></div>
+        <div class="match-card__pick"><div><p class="micro-label">Our pick</p><h2 class="recommended-team"></h2></div><div class="confidence-pill"><strong class="confidence-percent"></strong><span class="confidence-label"></span></div></div>
+        <div class="match-card__teams"><span class="away-team"></span><span class="versus">vs</span><span class="home-team"></span></div>
+        <details class="reason"><summary><span>Why this pick</span><span class="reason__toggle" aria-hidden="true"></span></summary><p class="reason-text"></p></details>
+      </article>
+    </template>
+  </main>
+
+  <footer><div class="shell footer__inner"><div><strong>Ripper Tipper</strong><p>Clear AFL picks. No second guessing.</p></div><p class="footer__note">Tips are guidance only. Match details can change. Independent and not affiliated with or endorsed by the AFL or any club.</p></div></footer>
+  <noscript><div class="noscript">JavaScript is required to load the current round’s picks.</div></noscript>
+</body>
+</html>

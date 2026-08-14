@@ -1,23 +1,12 @@
 {
   "round_name": "Round 23",
-  "round_dates": "14\u201316 August 2026 \u00b7 Adelaide time",
+  "round_dates": "15\u201316 August 2026 \u00b7 Adelaide time",
   "status": "RipperTipper AFL prediction model",
-  "updated_at": "2026-08-14T07:48:27.811021+00:00",
-  "updated_label": "Updated 14 August, 05:18 pm",
+  "updated_at": "2026-08-14T13:38:46.157413+00:00",
+  "updated_label": "Updated 14 August, 11:08 pm",
   "accuracy_percent": 74,
   "accuracy_label": "45 of 61 completed tips correct \u00b7 through Round 22",
   "tips": [
-    {
-      "id": 38691,
-      "away_team": "Adelaide",
-      "home_team": "Fremantle",
-      "recommended_team": "Fremantle",
-      "confidence_percent": 75,
-      "start_time": "Fri 7:40 pm",
-      "venue": "Optus Stadium",
-      "reason": "Fremantle has the cleaner current availability profile.",
-      "kickoff_epoch_millis": 1786702200000
-    },
     {
       "id": 38688,
       "away_team": "St Kilda",

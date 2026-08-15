@@ -1,34 +1,12 @@
 {
   "round_name": "Round 23",
-  "round_dates": "15\u201316 August 2026 \u00b7 Adelaide time",
+  "round_dates": "16\u201316 August 2026 \u00b7 Adelaide time",
   "status": "RipperTipper AFL prediction model",
-  "updated_at": "2026-08-15T06:56:41.595575+00:00",
-  "updated_label": "Updated 15 August, 04:26 pm",
-  "accuracy_percent": 74,
-  "accuracy_label": "45 of 61 completed tips correct \u00b7 through Round 22",
+  "updated_at": "2026-08-15T11:29:15.032013+00:00",
+  "updated_label": "Updated 15 August, 08:59 pm",
+  "accuracy_percent": 75,
+  "accuracy_label": "49 of 65 completed tips correct \u00b7 Round 23 in progress",
   "tips": [
-    {
-      "id": 38686,
-      "away_team": "Collingwood",
-      "home_team": "Hawthorn",
-      "recommended_team": "Hawthorn",
-      "confidence_percent": 66,
-      "start_time": "Sat 7:10 pm",
-      "venue": "MCG",
-      "reason": "Hawthorn has the cleaner current availability profile.",
-      "kickoff_epoch_millis": 1786786800000
-    },
-    {
-      "id": 38690,
-      "away_team": "Melbourne",
-      "home_team": "Port Adelaide",
-      "recommended_team": "Melbourne",
-      "confidence_percent": 83,
-      "start_time": "Sat 7:40 pm",
-      "venue": "Adelaide Oval",
-      "reason": "Melbourne has the stronger recent five-game record.",
-      "kickoff_epoch_millis": 1786788600000
-    },
     {
       "id": 38685,
       "away_team": "West Coast",

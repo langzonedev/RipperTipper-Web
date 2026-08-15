@@ -2,22 +2,11 @@
   "round_name": "Round 24",
   "round_dates": "13\u201316 August 2026 \u00b7 Adelaide time",
   "status": "RipperTipper NRL prediction model",
-  "updated_at": "2026-08-15T11:29:20.366159+00:00",
+  "updated_at": "2026-08-15T13:02:17.427291+00:00",
   "updated_label": "Updated automatically",
   "accuracy_percent": null,
   "accuracy_label": "NRL accuracy tracking begins with this release",
   "tips": [
-    {
-      "id": 24006,
-      "away_team": "Warriors",
-      "home_team": "Broncos",
-      "recommended_team": "Warriors",
-      "confidence_percent": 69,
-      "start_time": "Sat 7:05 pm",
-      "venue": "Suncorp Stadium",
-      "reason": "Warriors have the stronger season record.",
-      "kickoff_epoch_millis": 1786786500000
-    },
     {
       "id": 24007,
       "away_team": "Titans",
@@ -34,7 +23,7 @@
       "away_team": "Dragons",
       "home_team": "Wests Tigers",
       "recommended_team": "Wests Tigers",
-      "confidence_percent": 64,
+      "confidence_percent": 66,
       "start_time": "Sun 3:35 pm",
       "venue": "CommBank Stadium",
       "reason": "Wests Tigers have been the stronger scoring side this season.",

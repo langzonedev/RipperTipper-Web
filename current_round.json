@@ -2,22 +2,11 @@
   "round_name": "Round 23",
   "round_dates": "16\u201316 August 2026 \u00b7 Adelaide time",
   "status": "RipperTipper AFL prediction model",
-  "updated_at": "2026-08-16T04:51:39.510685+00:00",
-  "updated_label": "Updated 16 August, 02:21 pm",
+  "updated_at": "2026-08-16T05:45:34.269830+00:00",
+  "updated_label": "Updated 16 August, 03:15 pm",
   "accuracy_percent": 76,
   "accuracy_label": "50 of 66 completed tips correct \u00b7 Round 23 in progress",
   "tips": [
-    {
-      "id": 38689,
-      "away_team": "Carlton",
-      "home_team": "Western Bulldogs",
-      "recommended_team": "Carlton",
-      "confidence_percent": 61,
-      "start_time": "Sun 2:45 pm",
-      "venue": "Marvel Stadium",
-      "reason": "Carlton hold a slight results-based team-strength edge.",
-      "kickoff_epoch_millis": 1786857300000
-    },
     {
       "id": 38684,
       "away_team": "Sydney",

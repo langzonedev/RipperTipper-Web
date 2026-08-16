@@ -2,22 +2,11 @@
   "round_name": "Round 23",
   "round_dates": "16\u201316 August 2026 \u00b7 Adelaide time",
   "status": "RipperTipper AFL prediction model",
-  "updated_at": "2026-08-16T03:14:14.909152+00:00",
-  "updated_label": "Updated 16 August, 12:44 pm",
+  "updated_at": "2026-08-16T04:05:00.408714+00:00",
+  "updated_label": "Updated 16 August, 01:35 pm",
   "accuracy_percent": 76,
   "accuracy_label": "50 of 66 completed tips correct \u00b7 Round 23 in progress",
   "tips": [
-    {
-      "id": 38685,
-      "away_team": "West Coast",
-      "home_team": "Greater Western Sydney",
-      "recommended_team": "Greater Western Sydney",
-      "confidence_percent": 83,
-      "start_time": "Sun 1:10 pm",
-      "venue": "ENGIE Stadium",
-      "reason": "Greater Western Sydney has the stronger recent five-game record.",
-      "kickoff_epoch_millis": 1786851600000
-    },
     {
       "id": 38689,
       "away_team": "Carlton",

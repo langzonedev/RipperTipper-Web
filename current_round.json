@@ -1,22 +1,110 @@
 {
-  "round_name": "Round 23",
-  "round_dates": "16\u201316 August 2026 \u00b7 Adelaide time",
+  "round_name": "Round 24",
+  "round_dates": "20\u201323 August 2026 \u00b7 Adelaide time",
   "status": "RipperTipper AFL prediction model",
-  "updated_at": "2026-08-16T05:45:34.269830+00:00",
-  "updated_label": "Updated 16 August, 03:15 pm",
+  "updated_at": "2026-08-16T07:01:02.035825+00:00",
+  "updated_label": "Updated 16 August, 04:31 pm",
   "accuracy_percent": 76,
-  "accuracy_label": "50 of 66 completed tips correct \u00b7 Round 23 in progress",
+  "accuracy_label": "51 of 67 completed tips correct \u00b7 Round 23 in progress",
   "tips": [
     {
-      "id": 38684,
-      "away_team": "Sydney",
-      "home_team": "Essendon",
-      "recommended_team": "Sydney",
-      "confidence_percent": 95,
-      "start_time": "Sun 4:10 pm",
+      "id": 38697,
+      "away_team": "Gold Coast",
+      "home_team": "St Kilda",
+      "recommended_team": "St Kilda",
+      "confidence_percent": 54,
+      "start_time": "Thu 7:00 pm",
+      "venue": "Marvel Stadium",
+      "reason": "St Kilda hold a slight results-based team-strength edge.",
+      "kickoff_epoch_millis": 1787218200000
+    },
+    {
+      "id": 38692,
+      "away_team": "Brisbane Lions",
+      "home_team": "Collingwood",
+      "recommended_team": "Brisbane Lions",
+      "confidence_percent": 63,
+      "start_time": "Fri 7:10 pm",
       "venue": "MCG",
+      "reason": "Brisbane Lions has the cleaner current availability profile.",
+      "kickoff_epoch_millis": 1787305200000
+    },
+    {
+      "id": 38693,
+      "away_team": "Fremantle",
+      "home_team": "Carlton",
+      "recommended_team": "Fremantle",
+      "confidence_percent": 74,
+      "start_time": "Sat 12:45 pm",
+      "venue": "Marvel Stadium",
+      "reason": "Fremantle's recent scoring margins are materially stronger.",
+      "kickoff_epoch_millis": 1787368500000
+    },
+    {
+      "id": 38696,
+      "away_team": "Western Bulldogs",
+      "home_team": "Melbourne",
+      "recommended_team": "Melbourne",
+      "confidence_percent": 61,
+      "start_time": "Sat 3:45 pm",
+      "venue": "MCG",
+      "reason": "Melbourne also rates higher on results-based team strength.",
+      "kickoff_epoch_millis": 1787379300000
+    },
+    {
+      "id": 38695,
+      "away_team": "Richmond",
+      "home_team": "Geelong",
+      "recommended_team": "Geelong",
+      "confidence_percent": 95,
+      "start_time": "Sat 7:15 pm",
+      "venue": "GMHBA Stadium",
+      "reason": "Geelong has the stronger recent five-game record.",
+      "kickoff_epoch_millis": 1787391900000
+    },
+    {
+      "id": 38699,
+      "away_team": "Greater Western Sydney",
+      "home_team": "Adelaide",
+      "recommended_team": "Adelaide",
+      "confidence_percent": 68,
+      "start_time": "Sat 7:40 pm",
+      "venue": "Adelaide Oval",
+      "reason": "Adelaide has the cleaner current availability profile.",
+      "kickoff_epoch_millis": 1787393400000
+    },
+    {
+      "id": 38694,
+      "away_team": "Port Adelaide",
+      "home_team": "Essendon",
+      "recommended_team": "Port Adelaide",
+      "confidence_percent": 73,
+      "start_time": "Sun 11:50 am",
+      "venue": "Marvel Stadium",
+      "reason": "Port Adelaide also rates higher on results-based team strength.",
+      "kickoff_epoch_millis": 1787451600000
+    },
+    {
+      "id": 38698,
+      "away_team": "North Melbourne",
+      "home_team": "Sydney",
+      "recommended_team": "Sydney",
+      "confidence_percent": 90,
+      "start_time": "Sun 2:50 pm",
+      "venue": "SCG",
       "reason": "Sydney has the stronger recent five-game record.",
-      "kickoff_epoch_millis": 1786862400000
+      "kickoff_epoch_millis": 1787462400000
+    },
+    {
+      "id": 38700,
+      "away_team": "Hawthorn",
+      "home_team": "West Coast",
+      "recommended_team": "Hawthorn",
+      "confidence_percent": 95,
+      "start_time": "Sun 6:50 pm",
+      "venue": "Optus Stadium",
+      "reason": "Hawthorn has the stronger recent five-game record.",
+      "kickoff_epoch_millis": 1787476800000
     }
   ]
 }

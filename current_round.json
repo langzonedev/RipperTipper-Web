@@ -2,8 +2,8 @@
   "round_name": "Round 24",
   "round_dates": "20\u201323 August 2026 \u00b7 Adelaide time",
   "status": "RipperTipper AFL prediction model",
-  "updated_at": "2026-08-16T07:48:05.483738+00:00",
-  "updated_label": "Updated 16 August, 05:18 pm",
+  "updated_at": "2026-08-16T08:49:39.296287+00:00",
+  "updated_label": "Updated 16 August, 06:19 pm",
   "accuracy_percent": 76,
   "accuracy_label": "51 of 67 completed tips correct \u00b7 Round 23 in progress",
   "tips": [
@@ -34,10 +34,10 @@
       "away_team": "Fremantle",
       "home_team": "Carlton",
       "recommended_team": "Fremantle",
-      "confidence_percent": 75,
+      "confidence_percent": 76,
       "start_time": "Sat 12:45 pm",
       "venue": "Marvel Stadium",
-      "reason": "Fremantle's recent scoring margins are materially stronger.",
+      "reason": "Fremantle has the cleaner current availability profile.",
       "kickoff_epoch_millis": 1787368500000
     },
     {
@@ -45,10 +45,10 @@
       "away_team": "Western Bulldogs",
       "home_team": "Melbourne",
       "recommended_team": "Melbourne",
-      "confidence_percent": 61,
+      "confidence_percent": 64,
       "start_time": "Sat 3:45 pm",
       "venue": "MCG",
-      "reason": "Melbourne also rates higher on results-based team strength.",
+      "reason": "Melbourne has the stronger recent five-game record.",
       "kickoff_epoch_millis": 1787379300000
     },
     {
@@ -78,7 +78,7 @@
       "away_team": "Port Adelaide",
       "home_team": "Essendon",
       "recommended_team": "Port Adelaide",
-      "confidence_percent": 73,
+      "confidence_percent": 72,
       "start_time": "Sun 11:50 am",
       "venue": "Marvel Stadium",
       "reason": "Port Adelaide also rates higher on results-based team strength.",

@@ -2,10 +2,10 @@
   "round_name": "Round 25",
   "round_dates": "20\u201323 August 2026 \u00b7 Adelaide time",
   "status": "RipperTipper NRL prediction model",
-  "updated_at": "2026-08-16T09:45:25.397598+00:00",
+  "updated_at": "2026-08-16T10:33:02.524343+00:00",
   "updated_label": "Updated automatically",
-  "accuracy_percent": null,
-  "accuracy_label": "NRL accuracy tracking begins with this release",
+  "accuracy_percent": 50,
+  "accuracy_label": "4 of 8 completed tips correct \u00b7 through Round 24",
   "tips": [
     {
       "id": 25001,

@@ -2,22 +2,11 @@
   "round_name": "Round 25",
   "round_dates": "20\u201323 August 2026 \u00b7 Adelaide time",
   "status": "RipperTipper NRL prediction model",
-  "updated_at": "2026-08-20T11:46:33.047599+00:00",
+  "updated_at": "2026-08-20T13:13:39.740856+00:00",
   "updated_label": "Updated automatically",
-  "accuracy_percent": 50,
-  "accuracy_label": "4 of 8 completed tips correct \u00b7 through Round 24",
+  "accuracy_percent": 56,
+  "accuracy_label": "5 of 9 completed tips correct \u00b7 Round 25 in progress",
   "tips": [
-    {
-      "id": 25001,
-      "away_team": "Panthers",
-      "home_team": "Storm",
-      "recommended_team": "Panthers",
-      "confidence_percent": 68,
-      "start_time": "Thu 7:20 pm",
-      "venue": "AAMI Park",
-      "reason": "Panthers have the stronger season record.",
-      "kickoff_epoch_millis": 1787219400000
-    },
     {
       "id": 25002,
       "away_team": "Broncos",

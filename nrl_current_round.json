@@ -2,21 +2,23 @@
   "round_name": "Round 25",
   "round_dates": "20\u201323 August 2026 \u00b7 Adelaide time",
   "status": "RipperTipper NRL prediction model",
-  "updated_at": "2026-08-21T09:54:18.174276+00:00",
+  "updated_at": "2026-08-21T10:50:24.454951+00:00",
   "updated_label": "Updated automatically",
-  "accuracy_percent": 56,
-  "accuracy_label": "5 of 9 completed tips correct \u00b7 Round 25 in progress",
+  "accuracy_percent": 50,
+  "accuracy_label": "5 of 10 completed tips correct \u00b7 Round 25 in progress",
   "tips": [
     {
       "id": 25002,
       "away_team": "Broncos",
       "home_team": "Raiders",
       "recommended_team": "Raiders",
-      "confidence_percent": 62,
+      "confidence_percent": 60,
       "start_time": "Fri 5:30 pm",
       "venue": "GIO Stadium",
       "reason": "Raiders have been the stronger scoring side this season.",
-      "kickoff_epoch_millis": 1787299200000
+      "kickoff_epoch_millis": 1787299200000,
+      "result_winner": "Broncos",
+      "result_label": "Final result: Broncos \u00b7 tip incorrect"
     },
     {
       "id": 25003,

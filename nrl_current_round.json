@@ -2,22 +2,11 @@
   "round_name": "Round 25",
   "round_dates": "20\u201323 August 2026 \u00b7 Adelaide time",
   "status": "RipperTipper NRL prediction model",
-  "updated_at": "2026-08-21T11:45:27.290652+00:00",
+  "updated_at": "2026-08-21T13:13:30.669215+00:00",
   "updated_label": "Updated automatically",
-  "accuracy_percent": 50,
-  "accuracy_label": "5 of 10 completed tips correct \u00b7 Round 25 in progress",
+  "accuracy_percent": 55,
+  "accuracy_label": "6 of 11 completed tips correct \u00b7 Round 25 in progress",
   "tips": [
-    {
-      "id": 25003,
-      "away_team": "Eels",
-      "home_team": "Dolphins",
-      "recommended_team": "Dolphins",
-      "confidence_percent": 76,
-      "start_time": "Fri 7:30 pm",
-      "venue": "Suncorp Stadium",
-      "reason": "Dolphins have the stronger season record.",
-      "kickoff_epoch_millis": 1787306400000
-    },
     {
       "id": 25004,
       "away_team": "Sea Eagles",

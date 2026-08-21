@@ -1,23 +1,12 @@
 {
   "round_name": "Round 24",
-  "round_dates": "21\u201323 August 2026 \u00b7 Adelaide time",
+  "round_dates": "22\u201323 August 2026 \u00b7 Adelaide time",
   "status": "RipperTipper AFL prediction model",
-  "updated_at": "2026-08-21T09:00:22.586813+00:00",
-  "updated_label": "Updated 21 August, 06:30 pm",
+  "updated_at": "2026-08-21T09:54:08.698768+00:00",
+  "updated_label": "Updated 21 August, 07:24 pm",
   "accuracy_percent": 75,
   "accuracy_label": "52 of 69 completed tips correct \u00b7 Round 24 in progress",
   "tips": [
-    {
-      "id": 38692,
-      "away_team": "Brisbane Lions",
-      "home_team": "Collingwood",
-      "recommended_team": "Brisbane Lions",
-      "confidence_percent": 66,
-      "start_time": "Fri 7:10 pm",
-      "venue": "MCG",
-      "reason": "Brisbane Lions has the cleaner current availability profile.",
-      "kickoff_epoch_millis": 1787305200000
-    },
     {
       "id": 38693,
       "away_team": "Fremantle",

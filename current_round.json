@@ -2,22 +2,11 @@
   "round_name": "Round 24",
   "round_dates": "22\u201323 August 2026 \u00b7 Adelaide time",
   "status": "RipperTipper AFL prediction model",
-  "updated_at": "2026-08-22T05:45:23.320508+00:00",
-  "updated_label": "Updated 22 August, 03:15 pm",
-  "accuracy_percent": 76,
-  "accuracy_label": "53 of 70 completed tips correct \u00b7 Round 24 in progress",
+  "updated_at": "2026-08-22T07:01:41.425038+00:00",
+  "updated_label": "Updated 22 August, 04:31 pm",
+  "accuracy_percent": 75,
+  "accuracy_label": "53 of 71 completed tips correct \u00b7 Round 24 in progress",
   "tips": [
-    {
-      "id": 38696,
-      "away_team": "Western Bulldogs",
-      "home_team": "Melbourne",
-      "recommended_team": "Melbourne",
-      "confidence_percent": 68,
-      "start_time": "Sat 3:45 pm",
-      "venue": "MCG",
-      "reason": "Melbourne has the stronger recent five-game record.",
-      "kickoff_epoch_millis": 1787379300000
-    },
     {
       "id": 38695,
       "away_team": "Richmond",

@@ -1,34 +1,12 @@
 {
   "round_name": "Round 24",
-  "round_dates": "22\u201323 August 2026 \u00b7 Adelaide time",
+  "round_dates": "23\u201323 August 2026 \u00b7 Adelaide time",
   "status": "RipperTipper AFL prediction model",
-  "updated_at": "2026-08-22T09:44:50.870472+00:00",
-  "updated_label": "Updated 22 August, 07:14 pm",
+  "updated_at": "2026-08-22T10:42:55.851247+00:00",
+  "updated_label": "Updated 22 August, 08:12 pm",
   "accuracy_percent": 74,
   "accuracy_label": "53 of 72 completed tips correct \u00b7 Round 24 in progress",
   "tips": [
-    {
-      "id": 38695,
-      "away_team": "Richmond",
-      "home_team": "Geelong",
-      "recommended_team": "Geelong",
-      "confidence_percent": 95,
-      "start_time": "Sat 7:15 pm",
-      "venue": "GMHBA Stadium",
-      "reason": "Geelong has the stronger recent five-game record.",
-      "kickoff_epoch_millis": 1787391900000
-    },
-    {
-      "id": 38699,
-      "away_team": "Greater Western Sydney",
-      "home_team": "Adelaide",
-      "recommended_team": "Adelaide",
-      "confidence_percent": 72,
-      "start_time": "Sat 7:40 pm",
-      "venue": "Adelaide Oval",
-      "reason": "Adelaide has the cleaner current availability profile.",
-      "kickoff_epoch_millis": 1787393400000
-    },
     {
       "id": 38694,
       "away_team": "Port Adelaide",

@@ -2,10 +2,10 @@
   "round_name": "Round 24",
   "round_dates": "22\u201323 August 2026 \u00b7 Adelaide time",
   "status": "RipperTipper AFL prediction model",
-  "updated_at": "2026-08-22T08:49:52.765011+00:00",
-  "updated_label": "Updated 22 August, 06:19 pm",
-  "accuracy_percent": 75,
-  "accuracy_label": "53 of 71 completed tips correct \u00b7 Round 24 in progress",
+  "updated_at": "2026-08-22T09:44:50.870472+00:00",
+  "updated_label": "Updated 22 August, 07:14 pm",
+  "accuracy_percent": 74,
+  "accuracy_label": "53 of 72 completed tips correct \u00b7 Round 24 in progress",
   "tips": [
     {
       "id": 38695,
@@ -23,7 +23,7 @@
       "away_team": "Greater Western Sydney",
       "home_team": "Adelaide",
       "recommended_team": "Adelaide",
-      "confidence_percent": 71,
+      "confidence_percent": 72,
       "start_time": "Sat 7:40 pm",
       "venue": "Adelaide Oval",
       "reason": "Adelaide has the cleaner current availability profile.",

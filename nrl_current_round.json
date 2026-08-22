@@ -2,10 +2,10 @@
   "round_name": "Round 25",
   "round_dates": "20\u201323 August 2026 \u00b7 Adelaide time",
   "status": "RipperTipper NRL prediction model",
-  "updated_at": "2026-08-22T10:43:37.335997+00:00",
+  "updated_at": "2026-08-22T11:37:53.167489+00:00",
   "updated_label": "Updated automatically",
-  "accuracy_percent": 46,
-  "accuracy_label": "6 of 13 completed tips correct \u00b7 Round 25 in progress",
+  "accuracy_percent": 50,
+  "accuracy_label": "7 of 14 completed tips correct \u00b7 Round 25 in progress",
   "tips": [
     {
       "id": 25006,
@@ -16,7 +16,9 @@
       "start_time": "Sat 7:05 pm",
       "venue": "Allianz Stadium",
       "reason": "Bulldogs have the stronger season record.",
-      "kickoff_epoch_millis": 1787391300000
+      "kickoff_epoch_millis": 1787391300000,
+      "result_winner": "Bulldogs",
+      "result_label": "Final result: Bulldogs \u00b7 tip correct"
     },
     {
       "id": 25007,

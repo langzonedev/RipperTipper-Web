@@ -2,10 +2,10 @@
   "round_name": "Round 25",
   "round_dates": "20\u201323 August 2026 \u00b7 Adelaide time",
   "status": "RipperTipper NRL prediction model",
-  "updated_at": "2026-08-22T08:50:31.726887+00:00",
+  "updated_at": "2026-08-22T09:45:27.061691+00:00",
   "updated_label": "Updated automatically",
-  "accuracy_percent": 50,
-  "accuracy_label": "6 of 12 completed tips correct \u00b7 Round 25 in progress",
+  "accuracy_percent": 46,
+  "accuracy_label": "6 of 13 completed tips correct \u00b7 Round 25 in progress",
   "tips": [
     {
       "id": 25005,
@@ -16,7 +16,9 @@
       "start_time": "Sat 5:00 pm",
       "venue": "Accor Stadium",
       "reason": "Rabbitohs get the home-ground edge.",
-      "kickoff_epoch_millis": 1787383800000
+      "kickoff_epoch_millis": 1787383800000,
+      "result_winner": "Warriors",
+      "result_label": "Final result: Warriors \u00b7 tip incorrect"
     },
     {
       "id": 25006,

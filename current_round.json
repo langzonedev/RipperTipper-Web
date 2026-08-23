@@ -1,22 +1,14 @@
 {
   "round_name": "Round 24",
-  "round_dates": "23\u201323 August 2026 \u00b7 Adelaide time",
-  "status": "RipperTipper AFL prediction model",
-  "updated_at": "2026-08-23T08:50:38.274807+00:00",
-  "updated_label": "Updated 23 August, 06:20 pm",
+  "round_dates": "Waiting for the next confirmed finals fixture",
+  "status": "Waiting for next AFL finals fixtures",
+  "updated_at": "2026-08-23T11:57:26.958267+00:00",
+  "updated_label": "Updated 23 August, 09:27 pm",
   "accuracy_percent": 75,
   "accuracy_label": "57 of 76 completed tips correct \u00b7 Round 24 in progress",
-  "tips": [
-    {
-      "id": 38700,
-      "away_team": "Hawthorn",
-      "home_team": "West Coast",
-      "recommended_team": "Hawthorn",
-      "confidence_percent": 95,
-      "start_time": "Sun 6:50 pm",
-      "venue": "Optus Stadium",
-      "reason": "Hawthorn has the stronger recent five-game record.",
-      "kickoff_epoch_millis": 1787476800000
-    }
-  ]
+  "season_state": "between_rounds",
+  "season_title": "Finals fixtures are being confirmed",
+  "season_message": "The home-and-away season is complete, but the finals series is still ahead. Picks will appear automatically as soon as the next confirmed AFL finals fixtures are available.",
+  "season_year": 2026,
+  "tips": []
 }

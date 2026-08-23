@@ -87,6 +87,13 @@
     card.append(badge, copy);
     return card;
   }
+  function accuracyDetail(snapshot) {
+    const season = safe(snapshot.season_accuracy_label, safe(snapshot.accuracy_label, "Accuracy tracking is not available yet."));
+    const seasonTotal = Number(snapshot.season_total);
+    const lifetimeTotal = Number(snapshot.lifetime_total);
+    const lifetime = safe(snapshot.lifetime_accuracy_label);
+    return lifetime && Number.isFinite(seasonTotal) && Number.isFinite(lifetimeTotal) && lifetimeTotal > seasonTotal ? `${season} · ${lifetime}` : season;
+  }
   function render(snapshot) {
     current = snapshot;
     const sport = selectedSport();
@@ -97,9 +104,9 @@
     const ts = parseTime(snapshot.updated_at);
     el.dataStatus.textContent = `${ts ? freshness(ts) : safe(snapshot.updated_label, "Latest update")} · ${safe(snapshot.status, "Current picks")}`;
     el.stale.hidden = lifecycle || !ts || Date.now() - ts <= STALE_AFTER_MS;
-    const acc = snapshot.accuracy_percent;
+    const acc = Number.isInteger(snapshot.season_accuracy_percent) ? snapshot.season_accuracy_percent : snapshot.accuracy_percent;
     el.accuracyValue.textContent = Number.isInteger(acc) ? `${acc}%` : "Tracking";
-    el.accuracyLabel.textContent = safe(snapshot.accuracy_label, "Accuracy tracking is not available yet.");
+    el.accuracyLabel.textContent = accuracyDetail(snapshot);
     const f = document.createDocumentFragment();
     if (lifecycle) f.append(lifecycleCard(snapshot));
     else snapshot.tips.forEach((tip, i) => f.append(matchCard(tip, i)));

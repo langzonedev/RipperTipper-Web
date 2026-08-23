@@ -2,10 +2,10 @@
   "round_name": "Round 25",
   "round_dates": "20\u201323 August 2026 \u00b7 Adelaide time",
   "status": "RipperTipper NRL prediction model",
-  "updated_at": "2026-08-23T07:49:17.040579+00:00",
+  "updated_at": "2026-08-23T08:50:48.273622+00:00",
   "updated_label": "Updated automatically",
-  "accuracy_percent": 53,
-  "accuracy_label": "8 of 15 completed tips correct \u00b7 Round 25 in progress",
+  "accuracy_percent": 50,
+  "accuracy_label": "8 of 16 completed tips correct \u00b7 through Round 25",
   "tips": [
     {
       "id": 25008,
@@ -16,7 +16,9 @@
       "start_time": "Sun 3:35 pm",
       "venue": "Allianz Stadium",
       "reason": "Roosters have the stronger season record.",
-      "kickoff_epoch_millis": 1787465100000
+      "kickoff_epoch_millis": 1787465100000,
+      "result_winner": "Wests Tigers",
+      "result_label": "Final result: Wests Tigers \u00b7 tip incorrect"
     }
   ]
 }

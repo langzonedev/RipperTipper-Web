@@ -2,22 +2,11 @@
   "round_name": "Round 24",
   "round_dates": "23\u201323 August 2026 \u00b7 Adelaide time",
   "status": "RipperTipper AFL prediction model",
-  "updated_at": "2026-08-23T02:01:43.221058+00:00",
-  "updated_label": "Updated 23 August, 11:31 am",
+  "updated_at": "2026-08-23T03:17:58.809171+00:00",
+  "updated_label": "Updated 23 August, 12:47 pm",
   "accuracy_percent": 74,
   "accuracy_label": "55 of 74 completed tips correct \u00b7 Round 24 in progress",
   "tips": [
-    {
-      "id": 38694,
-      "away_team": "Port Adelaide",
-      "home_team": "Essendon",
-      "recommended_team": "Port Adelaide",
-      "confidence_percent": 68,
-      "start_time": "Sun 11:50 am",
-      "venue": "Marvel Stadium",
-      "reason": "Port Adelaide also rates higher on results-based team strength.",
-      "kickoff_epoch_millis": 1787451600000
-    },
     {
       "id": 38698,
       "away_team": "North Melbourne",

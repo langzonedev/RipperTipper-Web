@@ -33,7 +33,8 @@
     return { p, label: "Close", level: "close" };
   }
   function validate(snapshot) {
-    if (!snapshot || !Array.isArray(snapshot.tips) || !snapshot.tips.length) throw new Error("No picks are available for this sport yet.");
+    if (!snapshot || !Array.isArray(snapshot.tips)) throw new Error("The picks data is unavailable.");
+    if (!snapshot.tips.length && !["between_rounds", "season_complete"].includes(snapshot.season_state)) throw new Error("No picks are available for this sport yet.");
     return snapshot;
   }
   function matchCard(tip, i) {
@@ -58,20 +59,50 @@
       button.setAttribute("aria-pressed", String(selected));
     });
   }
+  function countdown(epochMillis) {
+    const target = Number(epochMillis);
+    if (!Number.isFinite(target) || target <= Date.now()) return "";
+    const days = Math.ceil((target - Date.now()) / 86400000);
+    return `${days} day${days === 1 ? "" : "s"} until the next season starts`;
+  }
+  function lifecycleCard(snapshot) {
+    const card = document.createElement("article");
+    card.className = "state-card season-state";
+    const badge = document.createElement("div");
+    badge.className = "state-card__badge";
+    badge.textContent = snapshot.season_state === "season_complete" ? "✓" : "…";
+    const copy = document.createElement("div");
+    const title = document.createElement("strong");
+    title.textContent = safe(snapshot.season_title, "No upcoming fixtures");
+    const message = document.createElement("p");
+    message.textContent = safe(snapshot.season_message, "New picks will appear automatically when fixtures are confirmed.");
+    copy.append(title, message);
+    const remaining = countdown(snapshot.next_start_epoch_millis);
+    if (remaining) {
+      const next = document.createElement("p");
+      next.className = "season-state__countdown";
+      next.textContent = remaining;
+      copy.append(next);
+    }
+    card.append(badge, copy);
+    return card;
+  }
   function render(snapshot) {
     current = snapshot;
     const sport = selectedSport();
-    el.roundKicker.textContent = `${sport.name} · ${safe(snapshot.round_name, "Current round")}`;
+    const lifecycle = ["between_rounds", "season_complete"].includes(snapshot.season_state);
+    el.roundKicker.textContent = lifecycle ? `${sport.name} · ${safe(snapshot.season_title, "Season update")}` : `${sport.name} · ${safe(snapshot.round_name, "Current round")}`;
     el.roundDates.textContent = safe(snapshot.round_dates, "Match dates to be confirmed");
-    el.roundSummary.textContent = `${snapshot.tips.length} pick${snapshot.tips.length === 1 ? "" : "s"} ready`;
+    el.roundSummary.textContent = lifecycle ? (snapshot.season_state === "season_complete" ? "Season complete" : "Next fixtures pending") : `${snapshot.tips.length} pick${snapshot.tips.length === 1 ? "" : "s"} ready`;
     const ts = parseTime(snapshot.updated_at);
     el.dataStatus.textContent = `${ts ? freshness(ts) : safe(snapshot.updated_label, "Latest update")} · ${safe(snapshot.status, "Current picks")}`;
-    el.stale.hidden = !ts || Date.now() - ts <= STALE_AFTER_MS;
+    el.stale.hidden = lifecycle || !ts || Date.now() - ts <= STALE_AFTER_MS;
     const acc = snapshot.accuracy_percent;
     el.accuracyValue.textContent = Number.isInteger(acc) ? `${acc}%` : "Tracking";
     el.accuracyLabel.textContent = safe(snapshot.accuracy_label, "Accuracy tracking is not available yet.");
     const f = document.createDocumentFragment();
-    snapshot.tips.forEach((tip, i) => f.append(matchCard(tip, i)));
+    if (lifecycle) f.append(lifecycleCard(snapshot));
+    else snapshot.tips.forEach((tip, i) => f.append(matchCard(tip, i)));
     el.matches.replaceChildren(f); el.matches.hidden = false; el.loading.hidden = true; el.error.hidden = true;
   }
   function showError(error) {

@@ -2,22 +2,11 @@
   "round_name": "Round 24",
   "round_dates": "23\u201323 August 2026 \u00b7 Adelaide time",
   "status": "RipperTipper AFL prediction model",
-  "updated_at": "2026-08-23T04:54:06.215324+00:00",
-  "updated_label": "Updated 23 August, 02:24 pm",
-  "accuracy_percent": 74,
-  "accuracy_label": "55 of 74 completed tips correct \u00b7 Round 24 in progress",
+  "updated_at": "2026-08-23T05:47:48.061800+00:00",
+  "updated_label": "Updated 23 August, 03:17 pm",
+  "accuracy_percent": 75,
+  "accuracy_label": "56 of 75 completed tips correct \u00b7 Round 24 in progress",
   "tips": [
-    {
-      "id": 38698,
-      "away_team": "North Melbourne",
-      "home_team": "Sydney",
-      "recommended_team": "Sydney",
-      "confidence_percent": 81,
-      "start_time": "Sun 2:50 pm",
-      "venue": "SCG",
-      "reason": "Sydney has the stronger recent five-game record.",
-      "kickoff_epoch_millis": 1787462400000
-    },
     {
       "id": 38700,
       "away_team": "Hawthorn",

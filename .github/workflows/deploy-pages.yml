@@ -39,21 +39,45 @@ jobs:
           python - <<'PY'
           import json, re
           from pathlib import Path
-          allowed_root = {'round_name','round_dates','status','updated_at','updated_label','accuracy_percent','accuracy_label','tips'}
+          required_root = {'round_name','round_dates','status','updated_at','updated_label','accuracy_percent','accuracy_label','tips'}
+          lifecycle_root = {
+              'season_state','season_title','season_message','season_year','next_start_epoch_millis',
+              'season_accuracy_percent','season_accuracy_label','season_accuracy_year','season_correct','season_total',
+              'lifetime_accuracy_percent','lifetime_accuracy_label','lifetime_correct','lifetime_total',
+          }
+          allowed_root = required_root | lifecycle_root
           allowed_tip = {'id','away_team','home_team','recommended_team','confidence_percent','start_time','venue','reason','kickoff_epoch_millis','result_winner','result_label'}
-          forbidden = {'sources','providers','provider_list','model_count','baseline_model_home_probability','context_home_probability','weights','coefficients','features','metrics','calibration','manual_signals','raw_data'}
-          leak = re.compile(r'\b\d+\s+(?:of|/)\s*\d+\s+(?:tracked\s+)?(?:models?|providers?|sources?)\b|\b(?:models?|providers?)\s+favour\b', re.I)
+          forbidden = {'sources','providers','provider_list','model_count','baseline_model_home_probability','context_home_probability','weights','coefficients','features','metrics','calibration','manual_signals','raw_data','dominant_reason'}
+          lifecycle_states = {'between_rounds','season_complete'}
+          leak = re.compile(r'\b\d+\s+(?:of|/)\s*\d+\s+(?:tracked\s+)?(?:models?|providers?|sources?)\b|\b(?:models?|providers?|sources?)\s+favour\b', re.I)
           for filename in ('current_round.json','nrl_current_round.json'):
               payload = json.loads(Path(filename).read_text())
+              missing = required_root - set(payload)
               extra = set(payload) - allowed_root
-              if extra or forbidden & set(payload):
-                  raise SystemExit(f'{filename}: unsafe root fields')
+              unsafe_root = forbidden & set(payload)
+              if missing or extra or unsafe_root:
+                  raise SystemExit(f'{filename}: invalid root fields (missing={sorted(missing)}, extra={sorted(extra)}, unsafe={sorted(unsafe_root)})')
               tips = payload.get('tips')
-              if not isinstance(tips, list) or not tips:
-                  raise SystemExit(f'{filename}: tips missing')
+              if not isinstance(tips, list):
+                  raise SystemExit(f'{filename}: tips must be a list')
+              lifecycle = payload.get('season_state')
+              if lifecycle not in (None, '', *lifecycle_states):
+                  raise SystemExit(f'{filename}: invalid season state')
+              if not tips and lifecycle not in lifecycle_states:
+                  raise SystemExit(f'{filename}: tips missing outside a lifecycle state')
+              if lifecycle in lifecycle_states and (not str(payload.get('season_title','')).strip() or not str(payload.get('season_message','')).strip()):
+                  raise SystemExit(f'{filename}: lifecycle title and message are required')
+              next_start = payload.get('next_start_epoch_millis')
+              if next_start is not None and (not isinstance(next_start, int) or next_start <= 0):
+                  raise SystemExit(f'{filename}: invalid next season start')
+              for key in ('accuracy_percent','season_accuracy_percent','lifetime_accuracy_percent'):
+                  value = payload.get(key)
+                  if value is not None and (not isinstance(value, int) or not 0 <= value <= 100):
+                      raise SystemExit(f'{filename}: invalid {key}')
               for tip in tips:
                   unsafe = (set(tip) - allowed_tip) | (forbidden & set(tip))
-                  if unsafe or leak.search(str(tip.get('reason',''))):
+                  required_tip = allowed_tip - {'result_winner','result_label'}
+                  if required_tip - set(tip) or unsafe or leak.search(str(tip.get('reason',''))):
                       raise SystemExit(f'{filename}: unsafe public tip')
           print('Validated AFL + NRL production public boundary')
           PY

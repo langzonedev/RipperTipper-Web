@@ -1,15 +1,11 @@
 {
-  "round_name": "Round 24",
-  "round_dates": "Waiting for the next confirmed finals fixture",
-  "status": "Waiting for next AFL finals fixtures",
-  "updated_at": "2026-08-24T11:46:09.895378+00:00",
-  "updated_label": "Updated 24 August, 09:16 pm",
+  "round_name": "Round 25",
+  "round_dates": "28\u201329 August 2026 \u00b7 Adelaide time",
+  "status": "RipperTipper AFL prediction model",
+  "updated_at": "2026-08-24T11:58:16.734132+00:00",
+  "updated_label": "Updated 24 August, 09:28 pm",
   "accuracy_percent": 75,
   "accuracy_label": "58 of 77 completed tips correct \u00b7 through Round 24",
-  "season_state": "between_rounds",
-  "season_title": "Finals fixtures are being confirmed",
-  "season_message": "The home-and-away season is complete, but the finals series is still ahead. Picks will appear automatically as soon as the next confirmed AFL finals fixtures are available.",
-  "season_year": 2026,
   "season_accuracy_percent": 75,
   "season_accuracy_label": "58 of 77 completed tips correct \u00b7 through Round 24",
   "season_accuracy_year": 2026,
@@ -19,5 +15,28 @@
   "lifetime_accuracy_label": "Lifetime: 58 of 77 completed tips correct (75%)",
   "lifetime_correct": 58,
   "lifetime_total": 77,
-  "tips": []
+  "tips": [
+    {
+      "id": 38720,
+      "away_team": "Collingwood",
+      "home_team": "Western Bulldogs",
+      "recommended_team": "Collingwood",
+      "confidence_percent": 53,
+      "start_time": "Fri 7:10 pm",
+      "venue": "MCG",
+      "reason": "Collingwood hold a slight results-based team-strength edge.",
+      "kickoff_epoch_millis": 1787910000000
+    },
+    {
+      "id": 38719,
+      "away_team": "Carlton",
+      "home_team": "Melbourne",
+      "recommended_team": "Melbourne",
+      "confidence_percent": 51,
+      "start_time": "Sat 7:05 pm",
+      "venue": "MCG",
+      "reason": "Melbourne has the cleaner current availability profile.",
+      "kickoff_epoch_millis": 1787996100000
+    }
+  ]
 }

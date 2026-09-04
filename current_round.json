@@ -1,9 +1,9 @@
 {
   "round_name": "Round 26",
-  "round_dates": "4\u20135 September 2026 \u00b7 Adelaide time",
+  "round_dates": "5\u20135 September 2026 \u00b7 Adelaide time",
   "status": "RipperTipper AFL prediction model",
-  "updated_at": "2026-09-04T05:56:45.687033+00:00",
-  "updated_label": "Updated 4 September, 03:26 pm",
+  "updated_at": "2026-09-04T11:20:46.475498+00:00",
+  "updated_label": "Updated 4 September, 08:50 pm",
   "accuracy_percent": 72,
   "accuracy_label": "58 of 80 completed tips correct \u00b7 Round 26 in progress",
   "season_accuracy_percent": 72,
@@ -16,17 +16,6 @@
   "lifetime_correct": 58,
   "lifetime_total": 80,
   "tips": [
-    {
-      "id": 38721,
-      "away_team": "Carlton",
-      "home_team": "Geelong",
-      "recommended_team": "Geelong",
-      "confidence_percent": 61,
-      "start_time": "Fri 7:10 pm",
-      "venue": "MCG",
-      "reason": "Geelong also rates higher on results-based team strength.",
-      "kickoff_epoch_millis": 1788514800000
-    },
     {
       "id": 38724,
       "away_team": "Brisbane Lions",

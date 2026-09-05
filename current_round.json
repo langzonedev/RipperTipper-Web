@@ -1,31 +1,42 @@
 {
   "round_name": "Round 27",
-  "round_dates": "12\u201312 September 2026 \u00b7 Adelaide time",
+  "round_dates": "11\u201312 September 2026 \u00b7 Adelaide time",
   "status": "RipperTipper AFL prediction model",
-  "updated_at": "2026-09-05T10:38:46.725181+00:00",
-  "updated_label": "Updated 5 September, 08:08 pm",
+  "updated_at": "2026-09-05T13:52:33.209640+00:00",
+  "updated_label": "Updated 5 September, 11:22 pm",
   "accuracy_percent": 73,
-  "accuracy_label": "60 of 82 completed tips correct \u00b7 Round 26 in progress",
+  "accuracy_label": "61 of 83 completed tips correct \u00b7 through Round 26",
   "season_accuracy_percent": 73,
-  "season_accuracy_label": "60 of 82 completed tips correct \u00b7 Round 26 in progress",
+  "season_accuracy_label": "61 of 83 completed tips correct \u00b7 through Round 26",
   "season_accuracy_year": 2026,
-  "season_correct": 60,
-  "season_total": 82,
+  "season_correct": 61,
+  "season_total": 83,
   "lifetime_accuracy_percent": 73,
-  "lifetime_accuracy_label": "Lifetime: 60 of 82 completed tips correct (73%)",
-  "lifetime_correct": 60,
-  "lifetime_total": 82,
+  "lifetime_accuracy_label": "Lifetime: 61 of 83 completed tips correct (73%)",
+  "lifetime_correct": 61,
+  "lifetime_total": 83,
   "tips": [
     {
       "id": 38725,
       "away_team": "Geelong",
       "home_team": "Fremantle",
       "recommended_team": "Geelong",
-      "confidence_percent": 52,
-      "start_time": "Sat 6:50 pm",
-      "venue": "MCG",
+      "confidence_percent": 54,
+      "start_time": "Fri 7:40 pm",
+      "venue": "Optus Stadium",
       "reason": "Geelong has the stronger recent five-game record.",
-      "kickoff_epoch_millis": 1789204800000
+      "kickoff_epoch_millis": 1789121400000
+    },
+    {
+      "id": 38726,
+      "away_team": "Adelaide",
+      "home_team": "Brisbane Lions",
+      "recommended_team": "Brisbane Lions",
+      "confidence_percent": 62,
+      "start_time": "Sat 7:05 pm",
+      "venue": "Gabba",
+      "reason": "Brisbane Lions also rates higher on results-based team strength.",
+      "kickoff_epoch_millis": 1789205700000
     }
   ]
 }

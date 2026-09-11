@@ -1,9 +1,9 @@
 {
   "round_name": "Round 27",
-  "round_dates": "11\u201312 September 2026 \u00b7 Adelaide time",
+  "round_dates": "12\u201312 September 2026 \u00b7 Adelaide time",
   "status": "RipperTipper AFL prediction model",
-  "updated_at": "2026-09-11T06:02:46.350380+00:00",
-  "updated_label": "Updated 11 September, 03:32 pm",
+  "updated_at": "2026-09-11T11:25:03.105264+00:00",
+  "updated_label": "Updated 11 September, 08:55 pm",
   "accuracy_percent": 73,
   "accuracy_label": "61 of 83 completed tips correct \u00b7 through Round 26",
   "season_accuracy_percent": 73,
@@ -16,17 +16,6 @@
   "lifetime_correct": 61,
   "lifetime_total": 83,
   "tips": [
-    {
-      "id": 38725,
-      "away_team": "Geelong",
-      "home_team": "Fremantle",
-      "recommended_team": "Geelong",
-      "confidence_percent": 55,
-      "start_time": "Fri 7:40 pm",
-      "venue": "Optus Stadium",
-      "reason": "Geelong has the stronger recent five-game record.",
-      "kickoff_epoch_millis": 1789121400000
-    },
     {
       "id": 38726,
       "away_team": "Adelaide",

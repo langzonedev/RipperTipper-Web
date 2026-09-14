@@ -2,8 +2,8 @@
   "round_name": "Round 28",
   "round_dates": "18\u201319 September 2026 \u00b7 Adelaide time",
   "status": "RipperTipper AFL prediction model",
-  "updated_at": "2026-09-14T19:24:53.829826+00:00",
-  "updated_label": "Updated 15 September, 04:54 am",
+  "updated_at": "2026-09-14T23:10:24.295833+00:00",
+  "updated_label": "Updated 15 September, 08:40 am",
   "accuracy_percent": 73,
   "accuracy_label": "62 of 85 completed tips correct \u00b7 through Round 27",
   "season_accuracy_percent": 73,
@@ -31,11 +31,11 @@
       "id": 38727,
       "away_team": "Brisbane Lions",
       "home_team": "Hawthorn",
-      "recommended_team": "Brisbane Lions",
-      "confidence_percent": 51,
+      "recommended_team": "Hawthorn",
+      "confidence_percent": 50,
       "start_time": "Sat 4:45 pm",
       "venue": "MCG",
-      "reason": "Brisbane Lions's recent scoring margins are materially stronger.",
+      "reason": "Hawthorn has the cleaner current availability profile.",
       "kickoff_epoch_millis": 1789802100000
     }
   ]

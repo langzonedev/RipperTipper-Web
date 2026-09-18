@@ -1,9 +1,9 @@
 {
   "round_name": "Round 28",
-  "round_dates": "18\u201319 September 2026 \u00b7 Adelaide time",
+  "round_dates": "19\u201319 September 2026 \u00b7 Adelaide time",
   "status": "RipperTipper AFL prediction model",
-  "updated_at": "2026-09-18T05:57:57.942181+00:00",
-  "updated_label": "Updated 18 September, 03:27 pm",
+  "updated_at": "2026-09-18T11:19:02.006536+00:00",
+  "updated_label": "Updated 18 September, 08:49 pm",
   "accuracy_percent": 73,
   "accuracy_label": "62 of 85 completed tips correct \u00b7 through Round 27",
   "season_accuracy_percent": 73,
@@ -16,17 +16,6 @@
   "lifetime_correct": 62,
   "lifetime_total": 85,
   "tips": [
-    {
-      "id": 38728,
-      "away_team": "Fremantle",
-      "home_team": "Sydney",
-      "recommended_team": "Sydney",
-      "confidence_percent": 62,
-      "start_time": "Fri 7:10 pm",
-      "venue": "SCG",
-      "reason": "Sydney's recent scoring margins are materially stronger.",
-      "kickoff_epoch_millis": 1789724400000
-    },
     {
       "id": 38727,
       "away_team": "Brisbane Lions",

@@ -2,8 +2,8 @@
   "round_name": "Round 29",
   "round_dates": "26\u201326 September 2026 \u00b7 Adelaide time",
   "status": "RipperTipper AFL prediction model",
-  "updated_at": "2026-09-19T20:43:53.164228+00:00",
-  "updated_label": "Updated 20 September, 06:13 am",
+  "updated_at": "2026-09-19T23:09:47.125650+00:00",
+  "updated_label": "Updated 20 September, 08:39 am",
   "accuracy_percent": 72,
   "accuracy_label": "63 of 87 completed tips correct \u00b7 through Round 28",
   "season_accuracy_percent": 72,
@@ -17,26 +17,15 @@
   "lifetime_total": 87,
   "tips": [
     {
-      "id": 39880,
+      "id": 38729,
       "away_team": "Brisbane Lions",
       "home_team": "Fremantle",
       "recommended_team": "Brisbane Lions",
-      "confidence_percent": 55,
+      "confidence_percent": 53,
       "start_time": "Sat 2:00 pm",
       "venue": "MCG",
       "reason": "Brisbane Lions's recent scoring margins are materially stronger.",
       "kickoff_epoch_millis": 1790397000000
-    },
-    {
-      "id": 38729,
-      "away_team": "Fremantle",
-      "home_team": "Brisbane Lions",
-      "recommended_team": "Brisbane Lions",
-      "confidence_percent": 54,
-      "start_time": "Sat 6:50 pm",
-      "venue": "MCG",
-      "reason": "Fremantle also faces significant travel.",
-      "kickoff_epoch_millis": 1790414400000
     }
   ]
 }

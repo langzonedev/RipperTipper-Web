@@ -1,32 +1,23 @@
 {
-  "round_name": "Finals Week 2",
-  "round_dates": "19\u201320 September 2026 \u00b7 Adelaide time",
-  "status": "RipperTipper NRL prediction model",
-  "updated_at": "2026-09-20T06:22:52.753753+00:00",
+  "round_name": "Finals",
+  "round_dates": "Waiting for the next confirmed finals fixture",
+  "status": "Waiting for next NRL finals fixtures",
+  "updated_at": "2026-09-20T12:25:16.151555+00:00",
   "updated_label": "Updated automatically",
-  "accuracy_percent": 57,
-  "accuracy_label": "20 of 35 completed tips correct \u00b7 Round 29 in progress",
+  "accuracy_percent": 56,
+  "accuracy_label": "20 of 36 completed tips correct \u00b7 through Round 29",
+  "season_state": "between_rounds",
+  "season_title": "Finals fixtures are being confirmed",
+  "season_message": "The regular season is complete, but the finals series is still ahead. Picks will return as finals matchups are confirmed.",
   "season_year": 2026,
-  "season_accuracy_percent": 57,
-  "season_accuracy_label": "20 of 35 completed tips correct \u00b7 Round 29 in progress",
+  "season_accuracy_percent": 56,
+  "season_accuracy_label": "20 of 36 completed tips correct \u00b7 through Round 29",
   "season_accuracy_year": 2026,
   "season_correct": 20,
-  "season_total": 35,
-  "lifetime_accuracy_percent": 57,
-  "lifetime_accuracy_label": "Lifetime: 20 of 35 completed tips correct (57%)",
+  "season_total": 36,
+  "lifetime_accuracy_percent": 56,
+  "lifetime_accuracy_label": "Lifetime: 20 of 36 completed tips correct (56%)",
   "lifetime_correct": 20,
-  "lifetime_total": 35,
-  "tips": [
-    {
-      "id": 57996234747175,
-      "away_team": "Knights",
-      "home_team": "Warriors",
-      "recommended_team": "Warriors",
-      "confidence_percent": 61,
-      "start_time": "Sun 3:35 pm",
-      "venue": "Eden Park",
-      "reason": "Warriors have the stronger season record.",
-      "kickoff_epoch_millis": 1789884300000
-    }
-  ]
+  "lifetime_total": 36,
+  "tips": []
 }

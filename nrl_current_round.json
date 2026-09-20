@@ -1,14 +1,11 @@
 {
-  "round_name": "Finals",
-  "round_dates": "Waiting for the next confirmed finals fixture",
-  "status": "Waiting for next NRL finals fixtures",
-  "updated_at": "2026-09-20T19:28:38.431295+00:00",
+  "round_name": "Finals Week 3",
+  "round_dates": "25\u201327 September 2026 \u00b7 Adelaide time",
+  "status": "RipperTipper NRL prediction model",
+  "updated_at": "2026-09-20T22:29:49.512935+00:00",
   "updated_label": "Updated automatically",
   "accuracy_percent": 56,
   "accuracy_label": "20 of 36 completed tips correct \u00b7 through Round 29",
-  "season_state": "between_rounds",
-  "season_title": "Finals fixtures are being confirmed",
-  "season_message": "The regular season is complete, but the finals series is still ahead. Picks will return as finals matchups are confirmed.",
   "season_year": 2026,
   "season_accuracy_percent": 56,
   "season_accuracy_label": "20 of 36 completed tips correct \u00b7 through Round 29",
@@ -19,5 +16,28 @@
   "lifetime_accuracy_label": "Lifetime: 20 of 36 completed tips correct (56%)",
   "lifetime_correct": 20,
   "lifetime_total": 36,
-  "tips": []
+  "tips": [
+    {
+      "id": 76809186745809,
+      "away_team": "Roosters",
+      "home_team": "Dolphins",
+      "recommended_team": "Dolphins",
+      "confidence_percent": 56,
+      "start_time": "Fri 7:20 pm",
+      "venue": "Suncorp Stadium",
+      "reason": "Dolphins get the home-ground edge.",
+      "kickoff_epoch_millis": 1790329800000
+    },
+    {
+      "id": 180307112197472,
+      "away_team": "Knights",
+      "home_team": "Panthers",
+      "recommended_team": "Panthers",
+      "confidence_percent": 69,
+      "start_time": "Sun 3:30 pm",
+      "venue": "Accor Stadium",
+      "reason": "Panthers have the stronger season record.",
+      "kickoff_epoch_millis": 1790488800000
+    }
+  ]
 }

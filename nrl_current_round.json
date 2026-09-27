@@ -1,14 +1,11 @@
 {
-  "round_name": "Finals",
-  "round_dates": "Waiting for the next confirmed finals fixture",
-  "status": "Waiting for next NRL finals fixtures",
-  "updated_at": "2026-09-27T14:04:30.919728+00:00",
+  "round_name": "Grand Final",
+  "round_dates": "4 October 2026 \u00b7 Adelaide time",
+  "status": "RipperTipper NRL prediction model",
+  "updated_at": "2026-09-27T18:27:33.000494+00:00",
   "updated_label": "Updated automatically",
   "accuracy_percent": 53,
   "accuracy_label": "20 of 38 completed tips correct \u00b7 through Round 30",
-  "season_state": "between_rounds",
-  "season_title": "Finals fixtures are being confirmed",
-  "season_message": "The regular season is complete, but the finals series is still ahead. Picks will return as finals matchups are confirmed.",
   "season_year": 2026,
   "season_accuracy_percent": 53,
   "season_accuracy_label": "20 of 38 completed tips correct \u00b7 through Round 30",
@@ -19,5 +16,17 @@
   "lifetime_accuracy_label": "Lifetime: 20 of 38 completed tips correct (53%)",
   "lifetime_correct": 20,
   "lifetime_total": 38,
-  "tips": []
+  "tips": [
+    {
+      "id": 62514733356107,
+      "away_team": "Knights",
+      "home_team": "Roosters",
+      "recommended_team": "Roosters",
+      "confidence_percent": 60,
+      "start_time": "Sun 7:00 pm",
+      "venue": "Accor Stadium",
+      "reason": "Roosters have the stronger season record.",
+      "kickoff_epoch_millis": 1791102600000
+    }
+  ]
 }
